@@ -7,7 +7,7 @@ description: "Create, run, diagnose, and iteratively improve Agent Skill evaluat
 
 Help the user evaluate and evolve Agent Skills through the `skill-up` CLI.
 
-Manual: <https://alibaba.github.io/skill-up/>
+Manual: <https://liyunyi-gif.github.io/skill-up-evaluation-framework/>
 
 ## Language Policy
 
@@ -74,13 +74,13 @@ command -v skill-up && skill-up --version
 If a version is printed, continue. If you see `command not found`, on **macOS / Linux**:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/alibaba/skill-up/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/liyunyi-gif/skill-up-evaluation-framework/main/install.sh | bash
 
 export SKILL_UP_VERSION=v0.1.0
-curl -fsSL https://raw.githubusercontent.com/alibaba/skill-up/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/liyunyi-gif/skill-up-evaluation-framework/main/install.sh | bash
 
 export INSTALL_DIR="$HOME/bin"
-curl -fsSL https://raw.githubusercontent.com/alibaba/skill-up/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/liyunyi-gif/skill-up-evaluation-framework/main/install.sh | bash
 ```
 
 > **Platform:** `skill-up` currently supports **macOS / Linux** only; Windows is not supported.

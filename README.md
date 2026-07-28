@@ -10,26 +10,11 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/alibaba/skill-up/actions">
-      <img src="https://github.com/alibaba/skill-up/actions/workflows/ci.yml/badge.svg" alt="CI" />
-    </a>
-    <a href="https://deepwiki.com/alibaba/skill-up">
-      <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" />
-    </a>
-    <a href="./.github/badges/coverage.json">
-      <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/alibaba/skill-up/badges/.github/badges/coverage.json" alt="Coverage" />
-    </a>
     <a href="https://go.dev/">
       <img src="https://img.shields.io/badge/go-%3E%3D1.25-blue" alt="Go Version" />
     </a>
     <a href="LICENSE">
       <img src="https://img.shields.io/badge/license-Apache%202.0-green" alt="License" />
-    </a>
-    <a href="https://goreportcard.com/report/github.com/alibaba/skill-up">
-      <img src="https://goreportcard.com/badge/github.com/alibaba/skill-up" alt="Go Report Card" />
-    </a>
-    <a href="https://github.com/alibaba/skill-up/releases">
-      <img src="https://img.shields.io/github/v/release/alibaba/skill-up" alt="Release" />
     </a>
   </p>
 
@@ -38,7 +23,7 @@
   </p>
 
   <p align="center">
-    📖 <a href="https://alibaba.github.io/skill-up/">User Manual</a> · <a href="https://alibaba.github.io/skill-up/zh/">用户手册</a>
+    📖 <a href="https://liyunyi-gif.github.io/skill-up-evaluation-framework/">User Manual</a> · <a href="https://liyunyi-gif.github.io/skill-up-evaluation-framework/zh/">用户手册</a>
   </p>
 
   <hr />
@@ -84,10 +69,10 @@ repeat the loop through conversation.
 
 ```bash
 # Codex, global install
-npx skills add https://github.com/alibaba/skill-up/tree/main/skills/skill-upper -g -a codex -y
+npx skills add https://github.com/liyunyi-gif/skill-up-evaluation-framework/tree/main/skills/skill-upper -g -a codex -y
 
 # Claude Code, global install
-npx skills add https://github.com/alibaba/skill-up/tree/main/skills/skill-upper -g -a claude-code -y
+npx skills add https://github.com/liyunyi-gif/skill-up-evaluation-framework/tree/main/skills/skill-upper -g -a claude-code -y
 ```
 
 You normally do not need to install skill-up first. skill-upper checks for the
@@ -139,16 +124,16 @@ You can still install the CLI directly and hand-write `eval.yaml` and case
 files:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/alibaba/skill-up/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/liyunyi-gif/skill-up-evaluation-framework/main/install.sh | bash
 ```
 
 See the official documentation for
-[Getting Started](https://alibaba.github.io/skill-up/guide/getting-started),
-[Writing Evals](https://alibaba.github.io/skill-up/guide/writing-evals),
-[CLI Reference](https://alibaba.github.io/skill-up/guide/cli-reference), and
-[User Configuration](https://alibaba.github.io/skill-up/guide/user-config).
+[Getting Started](https://liyunyi-gif.github.io/skill-up-evaluation-framework/guide/getting-started),
+[Writing Evals](https://liyunyi-gif.github.io/skill-up-evaluation-framework/guide/writing-evals),
+[CLI Reference](https://liyunyi-gif.github.io/skill-up-evaluation-framework/guide/cli-reference), and
+[User Configuration](https://liyunyi-gif.github.io/skill-up-evaluation-framework/guide/user-config).
 Windows-specific setup and limitations are covered in the
-[Windows guide](https://alibaba.github.io/skill-up/guide/windows).
+[Windows guide](https://liyunyi-gif.github.io/skill-up-evaluation-framework/guide/windows).
 
 ## User config
 
@@ -256,7 +241,7 @@ jobs:
     runs-on: ubuntu-latest          # Docker container action — Linux only
     steps:
       - uses: actions/checkout@v4
-      - uses: alibaba/skill-up@main  # see "Versioning" below
+      - uses: liyunyi-gif/skill-up-evaluation-framework@main  # see "Versioning" below
         with:
           engine: claude_code        # or codex / qodercli / qwen_code; empty = let eval.yaml decide
           api-key: ${{ secrets.ANTHROPIC_API_KEY }}

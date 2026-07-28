@@ -17,7 +17,7 @@ hero:
       link: /guide/writing-evals
     - theme: alt
       text: View on GitHub
-      link: https://github.com/alibaba/skill-up
+      link: https://github.com/liyunyi-gif/skill-up-evaluation-framework
 
 features:
   - title: Eval-to-Evolution with skill-upper

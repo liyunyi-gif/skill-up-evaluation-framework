@@ -19,10 +19,10 @@ Skill 在真实 Agent Engine（如 Claude Code、Codex、Qoder CLI）中的功�
 
 ```bash
 # Codex，全局安装
-npx skills add https://github.com/alibaba/skill-up/tree/main/skills/skill-upper -g -a codex -y
+npx skills add https://github.com/liyunyi-gif/skill-up-evaluation-framework/tree/main/skills/skill-upper -g -a codex -y
 
 # Claude Code，全局安装
-npx skills add https://github.com/alibaba/skill-up/tree/main/skills/skill-upper -g -a claude-code -y
+npx skills add https://github.com/liyunyi-gif/skill-up-evaluation-framework/tree/main/skills/skill-upper -g -a claude-code -y
 ```
 
 安装这个 Skill 前不需要先安装 `skill-up`。`skill-upper` 在运行时会检查
@@ -86,10 +86,10 @@ Skill 实现和 eval 评测集保持同步，使修复沉淀为回归保障，�
 ### 使用安装脚本
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/alibaba/skill-up/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/liyunyi-gif/skill-up-evaluation-framework/main/install.sh | bash
 ```
 
-安装脚本会从 [GitHub Releases](https://github.com/alibaba/skill-up/releases) 下载当前平台对应的二进制文件。
+安装脚本会从 [GitHub Releases](https://github.com/liyunyi-gif/skill-up-evaluation-framework/releases) 下载当前平台对应的二进制文件。
 
 如需从仓库 checkout 后本地构建，需要安装 [Go](https://go.dev/dl/) 1.25 或更高版本：
 

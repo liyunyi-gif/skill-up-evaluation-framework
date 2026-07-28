@@ -22,10 +22,10 @@ Recommended: install it with the `skills` CLI:
 
 ```bash
 # Codex, global install
-npx skills add https://github.com/alibaba/skill-up/tree/main/skills/skill-upper -g -a codex -y
+npx skills add https://github.com/liyunyi-gif/skill-up-evaluation-framework/tree/main/skills/skill-upper -g -a codex -y
 
 # Claude Code, global install
-npx skills add https://github.com/alibaba/skill-up/tree/main/skills/skill-upper -g -a claude-code -y
+npx skills add https://github.com/liyunyi-gif/skill-up-evaluation-framework/tree/main/skills/skill-upper -g -a claude-code -y
 ```
 
 You do not need to install `skill-up` before installing this Skill.
@@ -94,10 +94,10 @@ become regression coverage rather than one-off patches.
 ### Install with the script
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/alibaba/skill-up/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/liyunyi-gif/skill-up-evaluation-framework/main/install.sh | bash
 ```
 
-The installer downloads the matching binary from [GitHub Releases](https://github.com/alibaba/skill-up/releases).
+The installer downloads the matching binary from [GitHub Releases](https://github.com/liyunyi-gif/skill-up-evaluation-framework/releases).
 
 To build locally from a checkout, install [Go](https://go.dev/dl/) 1.25 or later:
 

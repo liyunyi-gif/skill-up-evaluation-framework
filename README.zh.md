@@ -10,26 +10,11 @@
   </p>
 
   <p align="center">
-    <a href="https://github.com/alibaba/skill-up/actions">
-      <img src="https://github.com/alibaba/skill-up/actions/workflows/ci.yml/badge.svg" alt="CI" />
-    </a>
-    <a href="https://deepwiki.com/alibaba/skill-up">
-      <img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki" />
-    </a>
-    <a href="./.github/badges/coverage.json">
-      <img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/alibaba/skill-up/badges/.github/badges/coverage.json" alt="Coverage" />
-    </a>
     <a href="https://go.dev/">
       <img src="https://img.shields.io/badge/go-%3E%3D1.25-blue" alt="Go Version" />
     </a>
     <a href="LICENSE">
       <img src="https://img.shields.io/badge/license-Apache%202.0-green" alt="License" />
-    </a>
-    <a href="https://goreportcard.com/report/github.com/alibaba/skill-up">
-      <img src="https://goreportcard.com/badge/github.com/alibaba/skill-up" alt="Go Report Card" />
-    </a>
-    <a href="https://github.com/alibaba/skill-up/releases">
-      <img src="https://img.shields.io/github/v/release/alibaba/skill-up" alt="Release" />
     </a>
   </p>
 
@@ -38,7 +23,7 @@
   </p>
 
   <p align="center">
-    📖 <a href="https://alibaba.github.io/skill-up/zh/">用户手册</a> · <a href="https://alibaba.github.io/skill-up/">User Manual</a>
+    📖 <a href="https://liyunyi-gif.github.io/skill-up-evaluation-framework/zh/">用户手册</a> · <a href="https://liyunyi-gif.github.io/skill-up-evaluation-framework/">User Manual</a>
   </p>
 
   <hr />
@@ -83,10 +68,10 @@ eval、补充回归用例，并持续完成下一轮迭代。
 
 ```bash
 # Codex，全局安装
-npx skills add https://github.com/alibaba/skill-up/tree/main/skills/skill-upper -g -a codex -y
+npx skills add https://github.com/liyunyi-gif/skill-up-evaluation-framework/tree/main/skills/skill-upper -g -a codex -y
 
 # Claude Code，全局安装
-npx skills add https://github.com/alibaba/skill-up/tree/main/skills/skill-upper -g -a claude-code -y
+npx skills add https://github.com/liyunyi-gif/skill-up-evaluation-framework/tree/main/skills/skill-upper -g -a claude-code -y
 ```
 
 通常不需要提前安装 skill-up。skill-upper 运行时会检查 CLI；如果缺失，
@@ -135,16 +120,16 @@ Skill 和它的评测集更可靠。
 你仍然可以直接安装 CLI，并手写 `eval.yaml` 与用例文件：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/alibaba/skill-up/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/liyunyi-gif/skill-up-evaluation-framework/main/install.sh | bash
 ```
 
 详细步骤请查看官网的
-[快速开始](https://alibaba.github.io/skill-up/zh/guide/getting-started)、
-[编写评测](https://alibaba.github.io/skill-up/zh/guide/writing-evals)、
-[CLI 命令参考](https://alibaba.github.io/skill-up/zh/guide/cli-reference)和
-[用户配置](https://alibaba.github.io/skill-up/zh/guide/user-config)。
+[快速开始](https://liyunyi-gif.github.io/skill-up-evaluation-framework/zh/guide/getting-started)、
+[编写评测](https://liyunyi-gif.github.io/skill-up-evaluation-framework/zh/guide/writing-evals)、
+[CLI 命令参考](https://liyunyi-gif.github.io/skill-up-evaluation-framework/zh/guide/cli-reference)和
+[用户配置](https://liyunyi-gif.github.io/skill-up-evaluation-framework/zh/guide/user-config)。
 Windows 的安装方式与已知限制请参阅
-[Windows 指南](https://alibaba.github.io/skill-up/zh/guide/windows)。
+[Windows 指南](https://liyunyi-gif.github.io/skill-up-evaluation-framework/zh/guide/windows)。
 
 ## CLI 命令概览
 
@@ -175,7 +160,7 @@ jobs:
     runs-on: ubuntu-latest          # Docker 容器 action —— 仅 Linux
     steps:
       - uses: actions/checkout@v4
-      - uses: alibaba/skill-up@main  # 见下方「版本引用」
+      - uses: liyunyi-gif/skill-up-evaluation-framework@main  # 见下方「版本引用」
         with:
           engine: claude_code        # 或 codex / qodercli / qwen_code;留空则由 eval.yaml 自行声明
           api-key: ${{ secrets.ANTHROPIC_API_KEY }}

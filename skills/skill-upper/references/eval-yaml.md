@@ -1,6 +1,6 @@
 # eval.yaml 字段参考（skill-up）
 
-`eval.yaml` 是评测入口，声明「在什么环境、用什么 Engine、跑哪些用例、如何出报告」。内容对齐 [skill-up 用户手册 - 编写评测](https://alibaba.github.io/skill-up/zh/guide/writing-evals.html)。
+`eval.yaml` 是评测入口，声明「在什么环境、用什么 Engine、跑哪些用例、如何出报告」。内容对齐 [skill-up 用户手册 - 编写评测](https://liyunyi-gif.github.io/skill-up-evaluation-framework/zh/guide/writing-evals.html)。
 
 ## 完整字段骨架
 

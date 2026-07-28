@@ -18,7 +18,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/alibaba/skill-up' },
+      { icon: 'github', link: 'https://github.com/liyunyi-gif/skill-up-evaluation-framework' },
     ],
     search: {
       provider: 'local',
@@ -43,7 +43,7 @@ export default defineConfig({
               { text: 'Migrating from Anthropic', link: '/guide/migration' },
             ],
           },
-          { text: 'GitHub', link: 'https://github.com/alibaba/skill-up' },
+          { text: 'GitHub', link: 'https://github.com/liyunyi-gif/skill-up-evaluation-framework' },
         ],
         sidebar: {
           '/guide/': [
@@ -77,7 +77,7 @@ export default defineConfig({
           ],
         },
         editLink: {
-          pattern: 'https://github.com/alibaba/skill-up/edit/main/docs/:path',
+          pattern: 'https://github.com/liyunyi-gif/skill-up-evaluation-framework/edit/main/docs/:path',
           text: 'Edit this page on GitHub',
         },
         footer: {
@@ -105,7 +105,7 @@ export default defineConfig({
               { text: '从 Anthropic 格式迁移', link: '/zh/guide/migration' },
             ],
           },
-          { text: 'GitHub', link: 'https://github.com/alibaba/skill-up' },
+          { text: 'GitHub', link: 'https://github.com/liyunyi-gif/skill-up-evaluation-framework' },
         ],
         sidebar: {
           '/zh/guide/': [
@@ -139,7 +139,7 @@ export default defineConfig({
           ],
         },
         editLink: {
-          pattern: 'https://github.com/alibaba/skill-up/edit/main/docs/:path',
+          pattern: 'https://github.com/liyunyi-gif/skill-up-evaluation-framework/edit/main/docs/:path',
           text: '在 GitHub 上编辑此页',
         },
         footer: {
