@@ -8,10 +8,9 @@ Only the latest released version receives security fixes.
 
 Please **do not** open a public GitHub issue for security vulnerabilities.
 
-Instead, report them privately using either of the following channels:
+Instead, report them privately using the following channel:
 
-- **Preferred:** [GitHub Security Advisories](../../security/advisories/new)
-- **Email (fallback):** <yutian.taoyt@alibaba-inc.com>
+- [GitHub Security Advisories](../../security/advisories/new)
 
 Please include:
 
